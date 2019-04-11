@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+
+//THIS COMPONENT IS NO LONGER USED
+
 class List extends Component {
 
     constructor(props) {

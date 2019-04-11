@@ -9,6 +9,7 @@ class Oceania extends Component {
         };
     }
 
+    //on load render data for the right region
     componentDidMount() {
         console.log(this.props.match.params.id);
         fetch('https://restcountries.eu/rest/v2/region/oceania')
@@ -16,6 +17,7 @@ class Oceania extends Component {
             .then(dataJSON => this.setState({data:dataJSON}))
     }
 
+    //structure and render data
     render() {
 
         var langauges;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import List from "./components/List";
+//import all components
 import Africa from "./components/Africa";
 import Americas from "./components/Americas";
 import Asia from "./components/Asia";
@@ -16,6 +17,7 @@ class App extends Component {
       <div className="App">
           <Router>
               <h2>Welcome to CodeCrew Earth</h2>
+              {/*router links*/}
               <Link className={'linkSpace'} to={'/'}>Home</Link>
               <Link className={'linkSpace'} to={'/list/africa'}>Africa</Link>
               <Link className={'linkSpace'} to={'/list/americas'}>America</Link>
@@ -23,6 +25,7 @@ class App extends Component {
               <Link className={'linkSpace'} to={'/list/europe'}>Europe</Link>
               <Link className={'linkSpace'} to={'/list/oceania'}>Oceania</Link>
               <h2>Click one of the regions to see all of the countries listed in it</h2>
+              {/*components that links render*/}
               <Route path={'/list/africa'} component={Africa}/>
               <Route path={'/list/americas'} component={Americas}/>
               <Route path={'/list/asia'} component={Asia}/>
